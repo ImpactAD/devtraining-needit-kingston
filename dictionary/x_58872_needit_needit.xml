@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="New Field 1" max_length="40" name="new_field_1" type="integer"/>
+        <element choice="3" default="This is mandatory" dependent="new_field_1" dependent_on_field="new_field_1" label="new field 2" mandatory="true" max_length="70" name="new_field_2" type="choice" use_dependent_field="true">
+            <choice>
+                <element label="This is mandatory" value="This is mandatory"/>
+                <element label="Soch Le" sequence="1" value="Soch Le"/>
+                <element label="Soch Liya" sequence="2" value="Soch Liya"/>
+                <element label="Finally lets order" sequence="3" value="Finally lets order"/>
+            </choice>
+        </element>
+        <element choice="1" label="test 3 " max_length="30" name="test_3" read_only="true" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>
